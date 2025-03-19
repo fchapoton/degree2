@@ -86,7 +86,7 @@ def _rankin_cohen_bracket_func(Q, rnames=None, unames=None):
     R(n-1) = [[r(n-1)0, r(n-1)],
               [r(n-1), r(n-1)2]]
     be the symmetric matrices.
-    Q is a homogenous polynomial of u1 and u2
+    Q is a homogeneous polynomial of u1 and u2
     whose coefficient is a polynomial of R0, ..., R(n-1).
     This function returns a Rakin-Cohen type differential
     operator corresponding to Q.
@@ -394,6 +394,7 @@ def _bracket_vec_val(vecs):
 def vector_valued_rankin_cohen(f, vec_val):
     '''
     Rankin-Cohen type differential operator defined by van Dorp.
+
     Let f be a scalar valued Siegel modular form of weight det^k
     and vec_val be a vector valued Siegel modular form of weight
     det^l Sym(j).
