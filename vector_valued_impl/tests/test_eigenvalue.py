@@ -1,6 +1,7 @@
 from sage.all import (ComplexField, NumberField, PolynomialRing, CuspForms, QQ,
-                      CartesianProduct, fork)
+                      fork)
 import unittest
+from itertools import product
 from degree2.vector_valued_smfs import vector_valued_siegel_modular_forms as vvsmf
 from degree2.basic_operation import number_of_procs
 
@@ -82,7 +83,7 @@ class RamanujanConjandKlingen(unittest.TestCase):
                     self.assert_hecke_eigen_values(f)
 
         with number_of_procs(1):
-            for k, j in CartesianProduct(range(4, 30), [2, 4, 10]):
+            for k, j in product(range(4, 30), [2, 4, 10]):
                 _check(k, j)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(RamanujanConjandKlingen)
