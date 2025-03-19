@@ -88,7 +88,7 @@ def _rankin_cohen_bracket_func(Q, rnames=None, unames=None):
     be the symmetric matrices.
     Q is a homogeneous polynomial of u1 and u2
     whose coefficient is a polynomial of R0, ..., R(n-1).
-    This function returns a Rakin-Cohen type differential
+    This function returns a Rankin-Cohen type differential
     operator corresponding to Q.
     The operator is a function that takes a list of n forms.
     '''
