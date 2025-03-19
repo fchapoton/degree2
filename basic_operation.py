@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import multiprocessing
+from functools import reduce
 
 from sage.all import Integer, ZZ, gcd, QQ, mod, floor, sqrt
 
